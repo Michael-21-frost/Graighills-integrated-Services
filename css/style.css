@@ -141,6 +141,24 @@ nav{
 .facts-overlay a:hover {
     color: var(--primary) !important;
 }
+  /* Default for larger screens (desktop) */
+  #responsive-box {
+    width: 250px; /* Desktop size */
+    height: 250px; /* Desktop size */
+  }
+  
+  #responsive-content h1 {
+    font-size: 40px; /* Large number size */
+  }
+  
+  #responsive-content h2 {
+    font-size: 24px; /* Large "Years" text */
+  }
+  
+  #responsive-content h5 {
+    font-size: 18px; /* Large "Experience" text */
+  }
+  
 
 
 /*** Service ***/
@@ -362,7 +380,7 @@ nav{
       /* Reduce the size of the box */
     #responsive-box {
         width: 120px;  /* Smaller width */
-        height: 120px; /* Smaller height */
+        height: 50vh; /* Smaller height */
       }
       
       /* Reduce the padding and font size of the content */
@@ -389,7 +407,7 @@ nav{
      /* Further reduce the size of the box for smaller screens */
      #responsive-box {
         width: 90px;  /* Even smaller width */
-        height: 90px; /* Even smaller height */
+        height: 50vh; /* Even smaller height */
       }
   
       /* Further reduce padding */
