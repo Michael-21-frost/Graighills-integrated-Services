@@ -389,7 +389,7 @@ nav{
       }
   
       #responsive-content h1 {
-        font-size: 20px; /* Smaller number size */
+        font-size: 40px; /* Smaller number size */
       }
       
       #responsive-content h2 {
@@ -417,7 +417,7 @@ nav{
   
       /* Further reduce font sizes */
       #responsive-content h1 {
-        font-size: 18px;  /* Even smaller number size */
+        font-size: 45px;  /* Even smaller number size */
       }
       
       #responsive-content h2 {
