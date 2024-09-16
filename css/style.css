@@ -107,95 +107,6 @@ nav{
     margin-left: 8px;
 }
 
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
-        margin-left: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        margin-top: 25px;
-        border-top: 1px solid #EEEEEE;
-    }
-}
-
-@media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        right: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
-}
-
-
-/*** Header ***/
-.carousel-caption {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    text-align: start;
-    background: rgba(0, 0, 0, .65);
-    z-index: 1;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 15%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    width: 4rem;
-    height: 4rem;
-    background-color: var(--dark);
-    border: 15px solid var(--dark);
-    border-radius: 50px;
-}
-
-.carousel-caption .breadcrumb-item+.breadcrumb-item::before {
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: var(--primary);
-}
-
-@media (max-width: 768px) {
-    #header-carousel .carousel-item {
-        position: relative;
-        min-height: 85vh;
-    }
-    
-    #header-carousel .carousel-item img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    #header-carousel h1{
-        font-size: 25px;
-    }
-    #header-carousel ol>li{
-        font-size: 9px;
-    }
- 
-
-
-}
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-1.jpg) center center no-repeat;
@@ -359,3 +270,143 @@ nav{
     letter-spacing: 1px;
     box-shadow: none;
 }
+
+
+/**mobile and devices responsiveness**/
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 25px;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    background: rgba(0, 0, 0, .65);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--dark);
+    border: 15px solid var(--dark);
+    border-radius: 50px;
+}
+
+.carousel-caption .breadcrumb-item+.breadcrumb-item::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 85vh;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #header-carousel h1{
+        font-size: 25px;
+    }
+    #header-carousel ol>li{
+        font-size: 9px;
+    }
+      /* Reduce the size of the box */
+    #responsive-box {
+        width: 120px;  /* Smaller width */
+        height: 120px; /* Smaller height */
+      }
+      
+      /* Reduce the padding and font size of the content */
+      #responsive-content {
+        padding: 0.5rem; /* Reduce padding */
+      }
+  
+      #responsive-content h1 {
+        font-size: 20px; /* Smaller number size */
+      }
+      
+      #responsive-content h2 {
+        font-size: 16px; /* Smaller "Years" text */
+      }
+      
+      #responsive-content h5 {
+        font-size: 13px; /* Smaller "Experience" text */
+      }
+    
+    
+
+}
+@media (max-width: 576px) {
+     /* Further reduce the size of the box for smaller screens */
+     #responsive-box {
+        width: 90px;  /* Even smaller width */
+        height: 90px; /* Even smaller height */
+      }
+  
+      /* Further reduce padding */
+      #responsive-content {
+        padding: 0.5rem;
+      }
+  
+      /* Further reduce font sizes */
+      #responsive-content h1 {
+        font-size: 18px;  /* Even smaller number size */
+      }
+      
+      #responsive-content h2 {
+        font-size: 15px;  /* Even smaller "Years" text */
+      }
+      
+      #responsive-content h5 {
+        font-size: 12px;  /* Even smaller "Experience" text */
+      }
+  }
