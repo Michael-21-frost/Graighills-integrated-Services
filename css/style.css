@@ -24,6 +24,7 @@ html,body{
 :root {
     --primary: #AA9123;
     --secondary: #2e3135;
+    --secondary-light: #2e3135;
     --light: #F8F9FA;
     --dark: #182333;
     --variant:#CCAD2B;
@@ -33,15 +34,23 @@ html,body{
 }
 p, ol, ul, span{
     color: var(--secondary);
+    opacity: 0.6;
+}
+h1, h2, h3, h4, h5, h6{
+    opacity: 0.8 !important;
 }
 a:active{
     color: var(--primary);
+}
+.m-0{
+    font-size: 19px;
 }
 
 /*** Button ***/
 .btn {
     font-weight: 500;
     transition: .5s;
+    border-radius:5px;
 }
 
 .btn.btn-primary,
@@ -78,6 +87,7 @@ a:active{
 /*** Navbar ***/
 nav{
     opacity: 0.93;
+    
 }
 .navbar.sticky-top {
     top: -100px;
@@ -88,9 +98,10 @@ nav{
     margin-left: 30px;
     padding: 20px 0;
     color: var(--secondary);
-    font-weight: 500;
+    font-weight: 200;
     text-transform: uppercase;
     outline: none;
+    font-size: 14px;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -110,7 +121,7 @@ nav{
 
 .page-header {
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../img/carousel-1.jpg) center center no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -136,11 +147,36 @@ nav{
     font-size: 120px;
     color: transparent;
     -webkit-text-stroke: 2px var(--primary);
+   
 }
 
 .facts-overlay a:hover {
     color: var(--primary) !important;
 }
+
+/* Make all the fact sections have equal height */
+.d-flex {
+    display: flex;
+    align-items:center; /* Ensures that all items are stretched to the same height */
+}
+
+.position-relative {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.facts-overlay {
+    flex-grow: 1; /* Ensures the overlay content grows to fill the remaining space */
+}
+
+/* For smaller screens (mobile), you can adjust the height */
+@media (max-width: 768px) {
+    .position-relative {
+        min-height: 300px; /* Adjust for mobile as necessary */
+    }
+}
+
   /* Default for larger screens (desktop) */
   #responsive-box {
     width: 250px; /* Desktop size */
@@ -364,15 +400,30 @@ nav{
         position: relative;
         min-height: 85vh;
     }
-    
+    .navbar{
+        padding: 0px;
+        margin: 0;
+    }
+    .m-0{
+        font-size: 15px;
+    }
+    .carousel-caption .container{
+        margin-top: 90px;
+    }
+   
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+    #header-carousel h6{
+        font-size: 12px;
+
+    }
     #header-carousel h1{
-        font-size: 25px;
+        font-size: 22px;
+        opacity: 0.5;
     }
     #header-carousel ol>li{
         font-size: 9px;
@@ -390,10 +441,12 @@ nav{
   
       #responsive-content h1 {
         font-size: 40px; /* Smaller number size */
+       
       }
       
       #responsive-content h2 {
         font-size: 16px; /* Smaller "Years" text */
+
       }
       
       #responsive-content h5 {
