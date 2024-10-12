@@ -1,0 +1,530 @@
+/***
+GRAIGHILLS INTEGRATED SERVICES LIMITED (GIS)
+8th September, 2024
+All rights reserved.
+Stylesheets for single paged website
+Developer | Michael Otote CEO OTOTECH INDUSTRIES
+
+***/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+html{
+ -webkit-touch-callout: none;
+ -webkit-text-size-adjust: none;
+ -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+
+}
+html,body{
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* Makes the scrollbar thin */
+    scrollbar-color: #AA9123 #f1f1f1; /* thumb and track colors */
+    
+  
+}
+:root {
+    --primary: #AA9123;
+    --secondary: #2e3135;
+    --secondary-light: #2e3135;
+    --light: #F8F9FA;
+    --dark: #182333;
+    --variant:#CCAD2B;
+}
+.custom-icon {
+    font-size: 1.5rem; /* Adjust this value to make icons bigger */
+}
+p, ol, ul, span{
+    color: var(--secondary);
+    opacity: 0.7 !important;
+}
+span{
+    font-weight: 700;
+    opacity: 1 !important;
+}
+h1, h2, h3, h4, h5, h6{
+    opacity: 0.8 !important;
+}
+a:active{
+    color: var(--primary);
+}
+.m-0{
+    font-size: 19px;
+}
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+    border-radius:5px;
+}
+
+/***#***/
+body {
+    background: #fff;
+    color: #444;
+   
+  }
+  
+
+
+  
+  /* Back to top button */
+  
+  .back-to-top {
+    position: fixed;
+    display: none;
+    background: var(--primary);
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+  }
+  
+  .back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+  }
+
+  /**carousel**/
+  #intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--light) url("../img/intro-bg.jpg") center top no-repeat;
+    background-size: cover;
+  }
+  
+  #intro .intro-info h4 {
+    color: var(--dark);
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  
+  #intro .intro-info h4 span {
+    color: var(--primary);
+    opacity: 1 !important;
+    font-size: 26px;
+   
+  }
+  
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--primary);
+    color: #fff;
+  }
+  
+  #intro .intro-info .btn-get-started:hover,
+  #intro .intro-info .btn-services:hover {
+    background: var(--variant);
+  }
+  #hero-text{
+    margin-top: -7%;
+  }
+  #paragraph{
+    margin-top: -10%;
+    padding: 2px;
+    opacity: 0.9 !important;
+  }
+
+  /**about section**/
+  .section-header h3 {
+    font-size: 36px;
+    color: var(--primary);
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: var(--variant);
+    width: 50%;
+  }
+  
+  /* Section with background
+  --------------------------------*/
+  
+  .section-bg {
+    background: #f5f8fd;
+  }
+  
+  /* About Us Section
+  --------------------------------*/
+  
+  #about {
+    padding: 80px 0;
+  }
+  
+  #about .about-content {
+    padding-top: 20px;
+  }
+  #about .about-content p{
+    font-size: 15px;
+  }
+  
+  #about .about-content h2 {
+    color: var(--dark);
+    font-weight: 700;
+  }
+  
+  #about .about-content h3 {
+    color: var(--variant);
+    font-weight: 400;
+    font-size: 24px;
+    
+  }
+  
+  #about .about-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #about .about-content ul li {
+    padding-bottom: 5px;
+   
+  }
+  
+  #about .about-content ul li i {
+    font-size: 18px;
+    padding-right: 4px;
+    color: var(--primary);
+  }
+  
+  #about .about-img {
+    position: relative;
+    margin: 30px 30px 30px 30px;
+  }
+  
+  #about .about-img img {
+    width: 100%;
+    height: 70vh;
+    border: 8px solid #fff;
+    transition: .5s;
+  }
+  
+  #about .about-img img:hover {
+    width: 100%;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  
+  #about .about-img::before {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: #ebf1fa;
+    transition: .5s;
+  }
+  
+  #about .about-img::after {
+    position: absolute;
+    right: -31px;
+    bottom: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: #ebf1fa;
+    transition: .5s;
+  }
+  /* Services Section
+--------------------------------*/
+
+#services {
+    padding: 60px 0 40px 0;
+  }
+  
+  #services .box {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0 10px 40px 10px;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.185);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  
+  #services .icon {
+    margin: 0 auto 15px auto;
+    padding-top: 12px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  #services .icon i {
+    font-size: 36px;
+    line-height: 1;
+  }
+  
+  #services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  #services .title a {
+    color: #111;
+  }
+  
+  #services .box:hover .title a {
+    color: var(--variant);
+  }
+  
+  #services .description {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  
+  /* Why Us Section
+  --------------------------------*/
+  
+  #why-us {
+    padding: 20px 0;
+   
+  }
+  #why-us .why-us-img {
+    position: relative;
+    margin: 30px 30px 30px 30px;
+    
+  }
+  #why-us .why-us-img img {
+    width: 100%;
+    height: 50vh;
+    border: 8px solid #fff;
+    transition: .5s;
+  }
+  
+  #why-us .why-us-img img:hover {
+    width: 100%;
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  
+  #why-us .why-us-img::before {
+    position: absolute;
+    left: -31px;
+    top: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: var(--primary);
+    transition: .5s;
+  }
+  
+  #why-us .why-us-img::after {
+    position: absolute;
+    right: -31px;
+    bottom: -30px;
+    width: 90%;
+    height: 92%;
+    z-index: -1;
+    content: '';
+    background-color: var(--primary);
+    transition: .5s;
+  }
+  #why-us .why-us-content .features {
+    margin: 0 0 15px 0;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  #why-us .why-us-content .features i {
+    font-size: 36px;
+    float: left;
+  }
+  
+  #why-us .why-us-content .features h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 56px;
+    color: var(--dark);
+    margin-bottom: 5px;
+   
+  }
+  
+  #why-us .why-us-content .features p {
+    font-size: 16px;
+    margin-left: 56px;
+    color: var(--secondary);
+  }
+  
+  #why-us .counters {
+    padding-top: 40px;
+  }
+  
+  #why-us .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color: var(--primary);
+  }
+  
+  #why-us .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: var(--dark);
+  }
+  #why-us .section-header h3{
+    opacity: 0.8 !important;
+  }
+  .mb-3{
+    font-size: 19px;
+  }
+  .box p{
+    font-size: 15px;
+    text-align: left;
+  }
+  .box:hover .service-text a {
+    color: var(--variant); /* Ensure the text color stays visible on hover */
+    text-decoration: none !important;
+}
+
+/* If you have any opacity change, ensure it doesn't affect the text */
+.box:hover .service-text {
+    opacity: 1; /* Keep the opacity at full visibility */
+}
+
+.appointment {
+    background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, .65)), url(../img/carousel-3.jpg) center center no-repeat !important;
+    background-size: cover;
+}
+
+
+
+  /**mobile responsiveness**/
+  
+  @media (min-width: 992px) {
+    #intro .intro-info {
+      padding-top: 80px;
+    }
+ 
+   
+  
+    
+  }
+  
+  @media (max-width: 991px) {
+   
+  
+    #header {
+      height: 70px;
+      padding: 15px 0;
+    }
+  
+    #header .logo h1 {
+      font-size: 28px;
+      padding: 8px 0;
+    }
+  
+    #why-us .why-us-content {
+      padding-top: 30px;
+    }
+   
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  
+    #faq #faq-list a {
+      font-size: 18px;
+    }
+  
+    #faq #faq-list i {
+      top: 13px;
+    }
+    #about .about-img img{
+        height: 40vh;
+    }
+    #services .box{
+        height: 80vh;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    #intro {
+      height: auto;
+      padding: 80px 0 60px 0;
+    }
+  
+    #intro .container {
+      height: auto !important;
+    }
+  
+    #intro .intro-img {
+      width: 80%;
+    }
+  
+    #intro .intro-info {
+      text-align: center;
+      padding-top: 40px;
+    }
+  
+    #intro .intro-info h2 {
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+  
+    .section-header p {
+      width: 100%;
+    }
+    #about .about-img img{
+        height: 40vh;
+    }
+    #services .box{
+        height: 80vh;
+    }
+  
+  
+  }
+  
+  @media (max-width: 574px) {
+    #footer .footer-top .social-links a {
+      margin-bottom: 25px;
+    }
+    #about .about-img img{
+        height: 40vh;
+    }
+    #services .box{
+        height: 64vh;
+    }
+  }
