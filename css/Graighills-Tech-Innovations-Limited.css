@@ -18,17 +18,17 @@ html{
 html,body{
     scroll-behavior: smooth;
     scrollbar-width: thin; /* Makes the scrollbar thin */
-    scrollbar-color: #AA9123 #f1f1f1; /* thumb and track colors */
+    scrollbar-color: #0a98c0  #f1f1f1 !important; /* thumb and track colors */
     
   
 }
 :root {
-    --primary: #AA9123;
+    --primary: #0a98c0 !important;
     --secondary: #2e3135;
     --secondary-light: #2e3135;
     --light: #F8F9FA;
     --dark: #182333;
-    --variant:#CCAD2B;
+    --variant:#067796 !important;
 }
 .custom-icon {
     font-size: 1.5rem; /* Adjust this value to make icons bigger */
@@ -40,6 +40,9 @@ p, ol, ul, span{
 span{
     font-weight: 700;
     opacity: 1 !important;
+}
+.bold{
+  color:#0a98c0;
 }
 h1, h2, h3, h4, h5, h6{
     opacity: 0.8 !important;
@@ -146,7 +149,7 @@ body {
 
   /**about section**/
   .section-header h3 {
-    font-size: 36px;
+    font-size: 25px;
     color: var(--primary);
     text-align: center;
     font-weight: 700;
@@ -159,7 +162,7 @@ body {
     margin: auto;
     font-size: 15px;
     padding-bottom: 60px;
-    color: var(--variant);
+    color: var(--secondary) !important;
     width: 50%;
   }
   
@@ -295,11 +298,11 @@ body {
   }
   
   #services .title a {
-    color: #111;
+    color: var(--variant) !important;
   }
   
   #services .box:hover .title a {
-    color: var(--variant);
+    color: var(--variant) !important;
   }
   
   #services .description {
@@ -307,6 +310,9 @@ body {
     line-height: 28px;
     margin-bottom: 0;
     text-align: left;
+  }
+  .text-dark{
+    color: var(--secondary) !important;
   }
   
   /* Why Us Section
@@ -364,12 +370,12 @@ body {
   }
   
   #why-us .why-us-content .features i {
-    font-size: 36px;
+    font-size: 22px;
     float: left;
   }
   
   #why-us .why-us-content .features h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     margin-left: 56px;
     color: var(--dark);
@@ -413,7 +419,7 @@ body {
     text-align: left;
   }
   .box:hover .service-text a {
-    color: var(--variant); /* Ensure the text color stays visible on hover */
+    color: var(--variant) !important; /* Ensure the text color stays visible on hover */
     text-decoration: none !important;
 }
 
@@ -421,10 +427,36 @@ body {
 .box:hover .service-text {
     opacity: 1; /* Keep the opacity at full visibility */
 }
+.custom-border-color {
+  border-color: #0a98c0 !important;
+}
+.custom-blue {
+  color: #0a98c0;
+}
 
 .appointment {
     background: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, .65)), url(../img/carousel-3.jpg) center center no-repeat !important;
     background-size: cover;
+}
+/* Default icon styles */
+.social-icon {
+  color: #0a98c0;
+  border-color: #0a98c0;
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect: icons and borders change color */
+.social-icon:hover {
+  color: white; /* Icon turns white */
+  background-color: #0a98c0; /* Background turns blue */
+  border-color: #0a98c0; /* Keep the border blue */
+}
+
+.social-icon:hover i {
+  color: white; /* Icon itself turns white */
+}
+.specific{
+  color: var(--variant) !important;
 }
 
 
