@@ -5,6 +5,8 @@ All rights reserved.
 Stylesheets for single paged website
 Developer | Michael Otote CEO OTOTECH INDUSTRIES
 
+========Graighills integrated services style sheet
+
 ***/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
  
@@ -13,14 +15,24 @@ html{
  -webkit-text-size-adjust: none;
  -webkit-tap-highlight-color: rgba(0,0,0,0);
 
-
+ 
 }
 html,body{
     scroll-behavior: smooth;
     scrollbar-width: thin; /* Makes the scrollbar thin */
     scrollbar-color: #AA9123 #f1f1f1; /* thumb and track colors */
+    overflow-x: hidden;
     
   
+}
+body{
+    font-size:15px !important;
+	line-height: 28px;
+	font-weight:400;
+	background:#ffffff;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-family: 'Arimo', sans-serif !important;
 }
 :root {
     --primary: #AA9123;
@@ -33,24 +45,30 @@ html,body{
 .custom-icon {
     font-size: 1.5rem; /* Adjust this value to make icons bigger */
 }
-p, ol, ul, span{
-    color: var(--secondary);
-    opacity: 0.7 !important;
+p, ol, ul, span, .p{
+    color: var(--secondary) !important;
+    opacity: 0.95 !important;
+    font-size:14.5px !important;
    
     
 }
 h1, h2, h3, h4, h5, h6{
-    opacity: 0.8 !important;
+    opacity: 0.9 !important;
+    line-height:1.2em;
+	font-family: 'Rubik', sans-serif;
 }
 /* a:active{
     color: var(--primary);
 } */
-a:hover{
+p, a:hover{
     color: var(--light);
+    opacity:100% !important;
 }
 .m-0{
     font-size: 19px;
+    opacity: 100% !important;
 }
+
 
 /*** Button ***/
 .btn {
@@ -95,15 +113,17 @@ a:hover{
 
 /*** Navbar ***/
 nav{
-    opacity: 0.93;
-    position: fixed;
+    opacity: 0.97;
+    position: sticky;
+  
+   
     
     
 }
 .navbar.sticky-top {
 
     transition: .5s;
-    position:sticky;
+    position:fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -145,7 +165,7 @@ nav{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.699); /* Add shadow for better visibility */
     padding: 0; /* No extra padding */
     z-index: 1000; /* Make sure it stays on top */
-    opacity: 1;
+    
 }
 
 .custom-dropdown .dropdown-item {
@@ -321,10 +341,11 @@ nav{
 
 /*** Footer ***/
 .footer {
-    color: #999999;
-}
-.footer-text{
     color: white;
+    
+}
+.footer-text {
+    color: white !important;
 }
 #footer-text{
     color: white;

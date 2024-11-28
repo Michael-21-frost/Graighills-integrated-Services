@@ -5,6 +5,9 @@ All rights reserved.
 Stylesheets for single paged website
 Developer | Michael Otote CEO OTOTECH INDUSTRIES
 
+
+=======graighilss innovation tech style sheet
+
 ***/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
 
@@ -35,7 +38,7 @@ html,body{
 }
 p, ol, ul, span{
     color: var(--secondary);
-    opacity: 0.7 !important;
+   
 }
 span{
     font-weight: 700;
@@ -44,9 +47,7 @@ span{
 .bold{
   color:#0a98c0;
 }
-h1, h2, h3, h4, h5, h6{
-    opacity: 0.8 !important;
-}
+
 a:active{
     color: var(--primary);
 }
