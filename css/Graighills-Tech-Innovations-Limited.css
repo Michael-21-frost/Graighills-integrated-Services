@@ -103,12 +103,13 @@ body {
     position: relative;
     background: var(--light) url("../img/intro-bg.jpg") center top no-repeat;
     background-size: cover;
+    line-height: 1.5;
   }
   
   #intro .intro-info h4 {
     color: var(--dark);
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
   }
   

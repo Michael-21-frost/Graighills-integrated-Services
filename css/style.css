@@ -45,10 +45,10 @@ body{
 .custom-icon {
     font-size: 1.5rem; /* Adjust this value to make icons bigger */
 }
-p, ol, ul, span, .p{
+p, ol, ul, li, span, .p{
     color: var(--secondary) !important;
     opacity: 0.95 !important;
-    font-size:14.5px !important;
+    font-size:13px !important;
    
     
 }
@@ -170,6 +170,7 @@ nav{
 
 .custom-dropdown .dropdown-item {
     padding: 10px 10px; /* Add padding for dropdown items */
+    text-transform: uppercase;
 }
 
 .nav-item.dropdown:hover .custom-dropdown {
