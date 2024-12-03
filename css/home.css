@@ -982,14 +982,44 @@ img{
     color: #000;
   }
 }
+@media(min-width:320px){
+	.services-section{
+		position: relative;
+		margin-top: 40% !important;
+		padding-bottom: 10px;
+		
+	}
+	.lower-content h6{
+		margin-top: 12% !important;
+	}
+
+}
+@media(min-width:400px) and (max-width:450px){
+	.service-block .lower-content h3 a{
+		color:white !important;
+		
+	}
+	
+	.services-section{
+		position: relative;
+		margin-top: 15% !important;
+		padding-bottom: 10px;
+		
+	}
+}
 /* General Styles for Tablet */
 @media(min-height:720px){
 	.service-block .lower-content h3 a{
 		color: var(--variant);
 	}
+	.services-section{
+		margin-top: -52% !important;
+	}
+
 
 }
 @media (min-width: 712px) and (max-width: 1200px) {
+
   .services-section .upper-box {
     position: relative;
     background-size: cover;
