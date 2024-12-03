@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graighills FM Bookings</title>
+  <title>Graighills Tech Bookings</title>
   <meta name="description" content="Book your preferred date and time for consultations or appointments with Graighills Group. Streamlined booking process for a seamless experience." />
 
 
@@ -12,14 +12,14 @@
   
   <meta name="robots" content="index, follow" />
   
-  <link rel="canonical" href="https://www.graighillsgroup.com" />
+  <link rel="canonical" href="https://www.graighillsgroup.com/Graighills Tech Service Bookings.html" />
 
   <!-- Open Graph Data for Social Media Sharing -->
   <meta property="og:title" content="Graighills Group Booking" />
   <meta property="og:description" content="Book your preferred date and time for consultations or appointments with Graighills Group. Streamlined booking process for a seamless experience. " />
 
   <meta property="og:image" content="https://drive.google.com/uc?id=1-2uETkkVLN_gqAXUYoB0ajHaSQ-DzdT2" />
-  <meta property="og:url" content="https://www.graighillsgroup.com/Graighills-FM Service Bookings.html" />
+  <meta property="og:url" content="https://www.graighillsgroup.com/Graighills Tech Service Bookings.html" />
   <meta property="og:type" content="website" />
   
   <!-- Twitter Card Data -->
@@ -29,7 +29,7 @@
   <meta name="twitter:image" content="https://drive.google.com/uc?id=1-2uETkkVLN_gqAXUYoB0ajHaSQ-DzdT2" />
 
   <!-- Favicon -->
-  <link rel="icon" href="https://www.graighillsgroup.com/Graighills-FM Service Bookings.html/favicon.ico" />
+  <link rel="icon" href="https://www.graighillsgroup.com/Graighills Tech Service Bookings.html/favicon.ico" />
   
   <!-- Structured Data Example (Optional) -->
   <script type="application/ld+json">
@@ -37,7 +37,7 @@
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": "Graighills Group",
-    "url": "https://www.graighillsgroup.com/Graighills-FM Service Bookings.html",
+    "url": "https://www.graighillsgroup.com/Graighills Tech Service Bookings.html",
     "logo": "https://drive.google.com/uc?id=1-2uETkkVLN_gqAXUYoB0ajHaSQ-DzdT2",
     "description": "Book your preferred date and time for consultations or appointments with Graighills Group. Streamlined booking process for a seamless experience.",
     "sameAs": [
@@ -76,7 +76,7 @@
 	<div class="main">
     <h2 class="m-3">
       <img src="./img/form-logo.png" height="60px" width="50px" alt="Graighills Group Bookings"> 
-      Graighills-FM Service Booking
+      Graighills Tech Service Booking
   </h2>
 
 
@@ -99,6 +99,15 @@
               <input id="Name" type="text" name="Name" class="form-control" placeholder="Full Name" required/>
           </div>
       </div>
+         <!-- company name  -->
+         <div class="form-group agileits_w3layouts_form w3_agileits_margin">
+          <div class="wthree_input">
+              <!--  icon -->
+              <i class="fa fa-building" aria-hidden="true"></i>
+              <!--  input  -->
+              <input id="companyName" type="text" name="companyName" class="form-control" placeholder="Company Name / Business Name" required />
+          </div>
+      </div>
 
       <!-- Email  -->
       <div class="form-group agileits_w3layouts_form">
@@ -115,7 +124,7 @@
             <!--  icon -->
             <i class="fa fa-phone-alt" aria-hidden="true"></i>
             <!--  input -->
-            <input id="PhoneNumber" type="tel" name="PhoneNumber" class="form-control" placeholder="Phone" required />
+            <input id="PhoneNumber" type="tel" name="PhoneNumber" class="form-control" placeholder="Phone" required="" />
         </div>
     </div>
 
@@ -125,59 +134,60 @@
       <div class="clear"></div>
   </fieldset>
 
-  <!-- Second fieldset:  -->
-  <fieldset>
-    <h3>Service Details</h3>
-        
-    <!-- Service Details -->
-    <div class="form-group w3ls_description">
-        <i class="fa fa-align-right" aria-hidden="true"></i>
-        <textarea name="serviceDetails" class="form-control" id="serviceDescription" placeholder="Short description of need (e.g., AC installation, repair, etc.)" required></textarea>
-    </div>
-    
-    <!-- Preferred Service Date -->
-    <div class="form-group agileits_w3layouts_form w3_agileits_margin">
-        <div class="wthree_input">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            <input id="preferredDate" type="date" name="preferredDate" class="form-control" required>
-        </div>
-    </div>
+<!-- Second fieldset: -->
+<fieldset>
+  <h3>Project Details</h3>
+
+  <!-- Flex Container -->
+  <div style="display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap;">
+
+      <!-- Project Details -->
+      <div class="form-group agileits_w3layouts_form" style="flex: 1; min-width: 45%;">
+          <div class="wthree_input">
+              <!-- Icon -->
+              <i class="fa fa-align-right" aria-hidden="true"></i>
+              <!-- Textarea -->
+              <textarea name="projectDescription" class="form-control" id="projectDescription" 
+                  placeholder="Project Description & Requirements" 
+                  required 
+                  style="width: 100%;"></textarea>
+          </div>
+      </div>
+
+      <!-- Preferred Service Date -->
+      <div class="form-group agileits_w3layouts_form" style="flex: 1; min-width: 45%;">
+          <div class="wthree_input">
+              <!-- Icon -->
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <!-- Date Input -->
+              <input id="preferredDate" type="date" name="preferredDate" class="form-control" 
+                  required 
+                  style="width: 100%;">
+          </div>
+      </div>
+  </div>
+
+  <!-- Clear fix -->
+  <div class="clear"></div>
+</fieldset>
 
 
 
-      <!-- Clear fix -->
-      <div class="clear"></div>
-  </fieldset>
+    <!-- Third fieldset:  -->
+    <fieldset>
+      <!--addtional notes and questions -->
+      <h4>Additional Notes & Questions</h4>
 
-  <!-- Third fieldset:  -->
-  <fieldset>
-       <!-- Urgency Level -->
-       <h4>Urgency Level and Location</h4>
-
-       <!-- Service Address -->
-       <div class="form-group w3ls_description">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-        <input name="serviceAddress" type="text" id="Location" class="form-control" placeholder="Provide a full address where the service will be rendered" required></input>
-    </div>
-       <div class="form-group agileits_circles" id="radios">
-           <div class="wthree_radio">
-               <label class="radio">
-                   <input type="radio" name="urgency" value="Standard" id="firstButton" checked>
-                   <i></i>Standard
-               </label>
-           </div>
-           <div class="wthree_radio">
-               <label class="radio">
-                   <input type="radio" name="urgency" value="Emergency" id="secondButton">
-                   <i></i>Emergency
-               </label>
-           </div>
-       </div>
-
-        <!-- Clear fix -->
-      <div class="clear"></div>
-  </fieldset>
-  <br>
+      <!-- enquires-->
+      <div class="form-group w3ls_description">
+       <i class="" aria-hidden="true"></i>
+       <input name="additionalNote" type="text" id="additionalNote" class="form-control" placeholder="Questions or enquires..." required></input>
+   </div>
+     <br>
+       <!-- Clear fix -->
+     <div class="clear"></div>
+ </fieldset>
+ <br>
 <fieldset>
   <!-- Submit button -->
    <h4>kindly click the button to submit your details.</h4>
@@ -185,6 +195,9 @@
       <button id="SaveAccount" class="btn btn-primary agileinfo_primary submit">Submit Booking</button>
   </p>
 </fieldset>
+ 
+
+ 
 </form>
 
 <!-- Confirmation Modal -->
@@ -192,8 +205,8 @@
   <div class="modal-content">
       <span class="close-btn" id="closeModal">&times;</span>
       <h3>Booking Successful</h3>
-      <p>Your booking for  has been received! A representative from Graighills will contact you to discuss your needs. Thank you!</p>
-      <a href="Graighills-integrated-services.html#services" id="modalOkBtn" class="btn" >OK</a>
+      <p>Thank you for booking a session with Graighills Tech. We’ll review your request and get back to you soon to confirm the next steps and schedule the consultation.</p>
+      <a href="Graighills-Tech-Innovations-Limited.html#services" id="modalOkBtn" class="btn" >OK</a>
   </div>
 </div>
 
@@ -208,7 +221,7 @@
 	</div>
 	
 
-  <script type="module" src="js/api-1.js"></script>
+  <script type="module" src="js/api-2.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.formtowizard.js"></script>
     <script>
