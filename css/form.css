@@ -67,43 +67,63 @@ ul,label{
 body a:hover,body a{
 	text-decoration:none;
 }
-modal {
+/* Modal Styles */
+.modal {
+	display: none; /* Hidden by default */
 	position: fixed;
 	z-index: 1000;
 	left: 0;
-	top: 0;
+	margin-top: 0%;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.4);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
 }
 
 .modal-content {
 	background-color: #fff;
+	margin: 15% auto;
 	padding: 20px;
-	border-radius: 8px;
-	text-align: center;
-	width: 90%;
+	border-radius: 10px;
+	width: 80%;
 	max-width: 400px;
+	text-align: center;
+
+	
+}
+.modal-content p{
+	color: black;
+	line-height: 1.3;
+	font-size: 12px;
 }
 
 .close-btn {
-	float: right;
-	font-size: 1.5em;
+	float: right !important;
+	font-size: 20px;
 	cursor: pointer;
+	margin-top: -10px;
+	color: red;
+	display: none;
+}
+
+.close-btn:hover {
+	color: darkred;
 }
 
 .btn {
-	background-color: #d65c0d;
-	color: #fff;
-	border: none;
 	padding: 10px 20px;
-	border-radius: 4px;
+	margin-top: 20px;
+	background-color: #f56a00;
+	color: white;
+	border: none;
+	border-radius: 5px;
 	cursor: pointer;
 }
+
+.btn:hover {
+	background-color: #d45400;
+}
+
 /*-- main --*/
 
 
@@ -131,10 +151,22 @@ input[type="submit"],a{
 	width:45%;
 	margin:0 auto;
 }
-#radios{
-	display: flex !important;
-	justify-content: space-between;
+#radios {
+	display: flex; /* Enables flex layout */
+	justify-content: space-between; /* Ensures equal spacing */
+	align-items: center; /* Centers items vertically */
+	gap: 6rem; /* Adds spacing between the radio groups */
+	margin-top: 1rem; /* Adds space above the radio buttons */
 }
+
+.wthree_radio {
+	display: flex; /* Ensures label and input are aligned together */
+	flex-direction: column; /* Aligns radio button and text vertically */
+	align-items: center; /* Centers the text and button */
+	flex: 1; /* Ensures equal width for both radio groups */
+	text-align: center; /* Centers text */
+}
+
  #steps { 
 	margin: 80px 0 0 0;
 }
@@ -202,7 +234,7 @@ input[type="submit"],a{
     background: none;
     border: none;
     border-bottom: 2px solid #212121;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     color: #212121;
     padding: 1em 1em 1em 2em;
@@ -217,7 +249,7 @@ input[type="submit"],a{
 	width:100% !important;
 }
 .w3ls_description textarea{
-	width: 93% !important;
+	width: 100% !important;
 	min-height: 170px;
 }
 .w3ls_description i{
@@ -227,7 +259,8 @@ input[type="submit"],a{
     color: #38a90e;
 }
 ::-webkit-input-placeholder{
-	color:#212121 !important;
+	color:#212121a2 !important;
+	font-size: 12px;
 }
 .btn-primary,button#step1Prev,button#step2Prev{
 	font-size:14px;
@@ -387,6 +420,10 @@ label.radio {
 	}
 	.agileits_w3layouts_form {
 		width: 47.5%;
+	}
+	.modal{
+		height: 50vh;
+		margin-top: 30%;
 	}
 }
 @media (max-width: 736px){
